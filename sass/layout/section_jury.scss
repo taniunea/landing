@@ -1,14 +1,19 @@
-.jury_portrait img {
-    max-width: 100%;
-    height: auto;
-    padding-top: 30px;
+.jury-gallery {
+    display: flex;
+    flex-flow: wrap row;
 }
 
-.jury_member {
+.jury-member {
 	position: relative;
+    width: 33.333%;
 }
 
-.jury_name {
+.jury-member__image {
+    width: 100%;
+    height: auto;
+}
+
+.jury-member__name {
 	position: absolute;
     top: 90%;
     text-align: center;

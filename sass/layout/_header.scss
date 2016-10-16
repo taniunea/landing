@@ -1,4 +1,4 @@
-.header-content {
+.header__motto {
 	background-image: url('/images/home_page.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -6,13 +6,7 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
-}
-
-.header-content__content {
-	display: flex;
 	flex-flow: column wrap;
-	justify-content: center;
-	align-content: center;
 }
 
 .header-title {
