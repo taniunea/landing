@@ -1,0 +1,67 @@
+section {
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+.about_header {
+	background: url('/images/overview-herow.jpg') no-repeat;
+	height: 350px;
+}
+
+.about_header-motto {
+	padding-top: 200px;
+}
+
+.title {
+	font-size: $font-size-xl;
+	color: $base-color; 
+	font-family: $main-font;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.text {
+	font-size: $font-size-h4;
+	color: $btn-primary-color;
+}
+
+.text-signature {
+	color: $base-color;
+	font-size: $font-size-h6;
+}
+
+.text-paragraph {
+	color: $base-color;
+	font-size: $font-size-h4;
+}
+
+.about_content_side {
+	background-color: #D9E8EF;
+}
+
+.about_content {
+	padding-top: $font-size-h3;
+}
+
+.spacing {
+	padding: $font-size-h3 15px;
+}
+
+.about_content_side-top,
+.about_content_side-bottom {
+	color: $base-color;
+}
+
+.date {
+	padding: 15px 0;
+	border-top: 1px solid $btn-primary-color;
+	margin: 0 15px;
+	color: $base-color;
+}
+
+.video-place {
+	height: 230px;
+	width: 230px;
+	background-color: $btn-primary-color;
+	margin: 0 auto;
+}

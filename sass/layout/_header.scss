@@ -1,0 +1,29 @@
+.header-content {
+	background-image: url('/images/home_page.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: calc(100vh - 100px);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.header-content__content {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+.header-title {
+	text-align: center;
+	font-family: $main-font;
+	font-size: $font-size-xl;
+	letter-spacing: 3px;
+	padding-bottom: 3.5rem;
+}
+
+.header-title-lg {
+	color: $primary-color;
+	font-size: larger;
+}

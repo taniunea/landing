@@ -1,0 +1,29 @@
+.navbar {
+	border-radius: 0;
+	opacity: 0.8;
+	font-size: $font-size-h4;
+	background-color: $btn-primary-color;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: $primary-color;
+}
+
+.navbar-brand {
+	background-image: url('/images/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 300px;
+	justify-content: space-between;
+}
+
+.container-fluid {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.nav {
+	padding-left: 10em;
+	padding-right: 10em;	
+} 
+

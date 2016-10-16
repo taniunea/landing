@@ -1,0 +1,18 @@
+.jury_portrait img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+
+.jury_member {
+	position: relative;
+}
+
+.jury_name {
+	position: absolute;
+    top: 90%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
