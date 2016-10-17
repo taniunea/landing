@@ -1,16 +1,16 @@
 .button {
-	background-color: $btn-primary-color;
 	color: $secondary-color;
 	margin: 0 auto;
 	padding: 5px 50px;
 	font-size: $font-size-h3;
 	text-transform: uppercase;
-	font-weight: 700;
-	letter-spacing: 3px;
+	border: 2px solid $secondary-color; 
+	border-radius: 24px 24px;
 }
 
 .button:hover {
-	box-shadow: 0 8px 6px -6px black;
+	background-color: $secondary-color;
 	text-decoration: none;
-	color: $primary-color;
+	border: 2px solid $secondary-color; 
+	color: #fff;
 }

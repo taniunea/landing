@@ -2,36 +2,28 @@
 	padding-bottom: 50px;
 }
 
-.about-header {
-	background: url('/images/overview-herow.jpg') no-repeat;
-	height: 350px;
-}
-
-.about-header__motto {
-	padding-top: 200px;
+.divider {
+	border-top: 3px solid #f83579;
+    width: 50px;
+    margin: 20px auto;
 }
 
 .title {
+	text-align: center;
 	font-size: $font-size-xl;
 	color: $secondary-color; 
 	font-family: $main-font;
-	font-weight: 700;
-	letter-spacing: 3px;
+	text-transform: capitalize;
 }
 
 .text {
 	font-size: $font-size-h4;
-	color: $btn-primary-color;
-}
-
-.caption {
 	color: $base-color;
-	font-size: $font-size-h6;
 }
 
 .paragraph {
 	color: $base-color;
-	font-size: $font-size-h4;
+	font-size: $font-size-h5;
 	padding-bottom: 15px;
 }
 
