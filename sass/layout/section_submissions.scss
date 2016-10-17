@@ -1,0 +1,22 @@
+.submissions {
+	padding-bottom: 50px;
+}
+
+.gallery {
+	display: flex;
+	flex-flow: wrap row;
+}
+
+.gallery-item {
+	position: relative;
+    width: 16.66%;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+.gallery-item__image {
+	width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

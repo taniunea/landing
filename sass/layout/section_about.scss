@@ -1,6 +1,5 @@
-section {
-	padding-top: 50px;
-	padding-bottom: 50px; 
+.about {
+	padding-bottom: 50px;
 }
 
 .about-header {
@@ -44,9 +43,11 @@ section {
 	padding: $font-size-h3 15px;
 }
 
-.conditions,
-.timeline {
-	color: $base-color;
+.conditions__video {
+	height: 230px;
+	width: 230px;
+	background-color: $btn-primary-color;
+	margin: 0 auto;
 }
 
 .timeline__item {
@@ -56,9 +57,6 @@ section {
 	color: $base-color;
 }
 
-.conditions__video {
-	height: 230px;
-	width: 230px;
-	background-color: $btn-primary-color;
-	margin: 0 auto;
+.date-day {
+	font-weight: 700;
 }
