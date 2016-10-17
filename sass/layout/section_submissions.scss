@@ -20,3 +20,18 @@
     display: block;
     margin: 0 auto;
 }
+
+.gallery__load-more {
+	display: block;
+	width: 100%;
+    border: 1px solid $primary-color;
+    margin: 20px auto;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-weight: 700;
+}
+
