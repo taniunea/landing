@@ -22,16 +22,17 @@
 }
 
 .gallery__load-more {
-	display: block;
-	width: 100%;
-    border: 1px solid $primary-color;
-    margin: 20px auto;
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    border: 1px solid $font-grey;
+    margin: 50px auto 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
-    color: $primary-color;
-    font-weight: 700;
+    font-size: 18px;
+
 }
 
+.text__grey {
+    font-size: $font-size-h4;
+    color: $font-grey;
+}

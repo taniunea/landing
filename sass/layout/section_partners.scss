@@ -1,0 +1,28 @@
+.logos {
+	display: flex;
+	justify-content: center;
+	align-items: space-between;
+	width: 25%;
+	a {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.radisson {
+	background-image: url('images/logo-partners/radisson.png');
+	background-size: 100%;
+}
+
+.e-gov {
+	background-image: url('/images/logo-partners/e-gov.png');
+}
+
+.piko {
+	background-image: url('/images/logo-partners/piko.png');
+}
+
+.nrg {
+	background-image: url('/images/logo-partners/nrg.png');
+}
