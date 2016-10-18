@@ -26,7 +26,8 @@
 }
 
 .menu-item:hover,
-.menu-item:link {
+.menu-item:link,
+.menu-item:focus {
 	color: $secondary-color;
 	text-decoration: none;
 	font-size: $font-size-h4;
