@@ -1,28 +1,117 @@
+.partners {
+	padding-bottom: 50px;
+}
+
 .logos {
 	display: flex;
-	justify-content: center;
-	align-items: space-between;
-	width: 25%;
+	justify-content: space-between;
+	align-items: center;
 	a {
 		display: inline-block;
-		width: 100%;
-		height: auto;
+		width: 100px;
+		height: 100px;
+		margin-bottom: 50px;
 	}
 }
 
-.radisson {
-	background-image: url('images/logo-partners/radisson.png');
-	background-size: 100%;
+.backgr_center {
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.radisson {
+	background-image: url('/images/logo-partners - black/radisson.png');
+}
+
+
 .e-gov {
-	background-image: url('/images/logo-partners/e-gov.png');
+	background-image: url('/images/logo-partners - black/e-gov.png');
 }
 
 .piko {
-	background-image: url('/images/logo-partners/piko.png');
+	background-image: url('/images/logo-partners - black/piko.png');
 }
 
 .nrg {
+	background-image: url('/images/logo-partners - black/nrg.png');
+}
+
+.magenta {
+	background-image: url('/images/logo-partners - black/magenta.png');
+}
+
+.umbrela {
+	background-image: url('/images/logo-partners - black/umbrela.png');
+}
+
+.tekwill {
+	background-image: url('/images/logo-partners - black/tekwill.png');
+}
+
+.smartvision {
+	background-image: url('/images/logo-partners - black/usaid.png');
+}
+
+.radisson:hover {
+	background-image: url('/images/logo-partners/radisson.png');
+}
+
+.e-gov:hover {
+	background-image: url('/images/logo-partners/e-gov.png');
+}
+
+.piko:hover {
+	background-image: url('/images/logo-partners/piko.png');
+}
+
+.nrg:hover {
 	background-image: url('/images/logo-partners/nrg.png');
+}
+
+.magenta:hover {
+	background-image: url('/images/logo-partners/magenta.png');
+}
+
+.umbrela:hover {
+	background-image: url('/images/logo-partners/umbrela.png');
+}
+
+.tekwill:hover {
+	background-image: url('/images/logo-partners/tekwill.png');
+}
+
+.smartvision:hover {
+	background-image: url('/images/logo-partners/usaid.png');
+}
+
+.quote {
+	background-image: url('/images/reviews.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.author {
+	height: 125px;
+	width: 125px;
+	border-radius: 50%;
+	background-image: url('/images/helena-sateri.jpg');
+	background-size: contain;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+	margin-bottom: 30px;
+}
+
+blockquote {
+    width: 50%;
+    margin: 0 20px;
+    border-left: 5px solid $secondary-color;
+    color: #fff;
+    text-align: justify;
 }
