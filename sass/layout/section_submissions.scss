@@ -11,7 +11,6 @@
 	position: relative;
     width: 16.66%;
     margin: auto;
-    background-color: rgb(0, 0, 0);
 }
 
 .gallery-item__image {
@@ -35,3 +34,10 @@
     font-size: $font-size-h4;
     color: $font-grey;
 }
+
+.image-caption {
+    position: absolute;
+    top: 80%;
+    text-shadow: 0.5px 1px 1px rgb(0, 0, 0);
+}
+
