@@ -20,27 +20,44 @@
 <div class="wrapper">
     <!--Header section start-->
     <header class="header">
-        <div class="header__motto">
+        <div class="header__motto  container-fluid">
             <div class="header-title">Malmö Design Competition <span class="header-title-lg">'17</span></div>
-            <a class="button" href="#">submit</a>
+            <button class="button" data-toggle="modal" data-target="#myModal" href="#">welcome</button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Welcome to Malmö Design Competition</h4>
+                        </div>
+                        <div class="modal-body">
+                            In June 2016, the Solomon Foundation will launch its first open, anonymous, international design competition for a proposed Malmo museum in the Swedish city of Malmo. From all entries in Stage One, the 6-member jury will select six finalists. Following a public exhibition of the Stage Two finalist designs in Malmo, the jury will choose one as the competition winner.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default button__small" data-dismiss="modal">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <nav>
-            <div class="navigation">
+            <div class="navigation navbar-inverse" data-spy="affix" data-offset-top="700">
                 <div class="navigation__logo">
                     <a href="#">
                         <img src="/images/logo.png" alt="logo" class="navigation__logo-image">
                     </a>
                 </div>
                 <div class="navigation__menu">
-                    <a href="#" class="navigation__menu-item" >about</a>
-                    <a href="#" class="navigation__menu-item">jury</a>
-                    <a href="#" class="navigation__menu-item">submissions</a>
-                    <a href="#" class="navigation__menu-item">news</a>
-                    <a href="#" class="navigation__menu-item">partners</a>
+                    <a href="#about" class="navigation__menu-item" >about</a>
+                    <a href="#jury" class="navigation__menu-item">jury</a>
+                    <a href="#submissions" class="navigation__menu-item">submissions</a>
+                    <a href="#news" class="navigation__menu-item">news</a>
+                    <a href="#partners" class="navigation__menu-item">partners</a>
                     <div class="dropdown">
                         <a href="#" class="navigation__menu-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">contacts <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#">Action</a></li>
+                            <li><a href="#" class="">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                             <li role="separator" class="divider"></li>
@@ -48,7 +65,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="navigation__navicon">&#9776;</div>
+                <div class="navigation__navicon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#9776;</div>
+                    <ul class="dropdown-menu">
+                        <li><a href="#about" class="navigation__menu-item-navicon">about</a></li>
+                        <li><a href="#jury" class="navigation__menu-item-navicon">jury</a></li>
+                        <li><a href="#submissions" class="navigation__menu-item-navicon">submissions</a></li>
+                        <li><a href="#news" class="navigation__menu-item-navicon">news</a></li>
+                        <li><a href="#partners" class="navigation__menu-item-navicon">partners</a></li>
+                        <li><a href="#contacts" class="navigation__menu-item-navicon">contacts</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+
                 <div class="navigation__search">
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -59,11 +92,9 @@
             </div>
         </nav>
     </header>
-    
-
 
     <!--Content section-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -155,7 +186,7 @@
         </div>
     </section>
 
-    <section class="jury">
+    <section class="jury" id="jury">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -170,7 +201,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/ritva-viljanen.jpg" alt="ritva viljanen">
+                        <img class="img-responsive" src="/images/ritva-viljanen.jpg" alt="Ritva Viljanen">
                         <div class="overlay">
                             <h2>Ritva Viljanen</h2>
                             <p class="date-event">Jury Chair, Deputy Mayor, City of Helsinki<br>Ritva Viljanen serves as Deputy Mayor of the City of Helsinki, in charge of Educational and Cultural Affairs. Before becoming Deputy Mayor, Mrs. Viljanen was Permanent Secretary of the Ministry of the Interior (2003–2012) and Director General of the Population Register Centre (1997–2003).</p>                        
@@ -226,7 +257,7 @@
         </div>
     </section>
 
-    <section class="submissions">
+    <section class="submissions" id="submissions">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -243,75 +274,75 @@
             <div class="gallery">
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_1.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_1.jpg" alt="Project_1" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-1</div>
+                    <div class="image-caption date-day">ML-1</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_2.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_2.jpg" alt="Project_2" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-2</div>
+                    <div class="image-caption date-day">ML-2</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_3.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_3.jpg" alt="Project_3" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-3</div>
+                    <div class="image-caption date-day">ML-3</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_4.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_4.jpg" alt="Project_4" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-4</div>
+                    <div class="image-caption date-day">ML-4</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_5.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_5.jpg" alt="Project_5" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-5</div>
+                    <div class="image-caption date-day">ML-5</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_6.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_6.jpg" alt="Project_6" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-6</div>
+                    <div class="image-caption date-day">ML-6</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_7.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_7.jpg" alt="Project_7" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-7</div>
+                    <div class="image-caption date-day">ML-7</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_8.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_8.jpg" alt="Project_8" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-8</div>
+                    <div class="image-caption date-day">ML-8</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_9.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_9.jpg" alt="Project_9" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-9</div>
+                    <div class="image-caption date-day">ML-9</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_10.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_10.jpg" alt="Project_10" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-10</div>
+                    <div class="image-caption date-day">ML-10</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_11.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_11.jpg" alt="Project_11" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-11</div>
+                    <div class="image-caption date-day">ML-11</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_12.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_12.jpg" alt="Project_12" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-12</div>
+                    <div class="image-caption date-day">ML-12</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_13.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_13.jpg" alt="Project_13" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-13</div>
+                    <div class="image-caption date-day">ML-13</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_14.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_14.jpg" alt="Project_14" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-14</div>
+                    <div class="image-caption date-day">ML-14</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_15.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_15.jpg" alt="Project_15" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-15</div>
+                    <div class="image-caption date-day">ML-15</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_16.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_16.jpg" alt="Project_16" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-16</div>
+                    <div class="image-caption date-day">ML-16</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_17.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_17.jpg" alt="Project_17" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-17</div>
+                    <div class="image-caption date-day">ML-17</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_18.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_18.jpg" alt="Project_18" class="gallery-item__image"></a>
-                    <div class="image-caption text">ML-18</div>
+                    <div class="image-caption date-day">ML-18</div>
                 </div>
             </div>
             <div class="gallery__load-more">
@@ -320,7 +351,7 @@
         </div>
     </section>
 
-    <section class="news">
+    <section class="news" id="news">
         <div class="news__container">
             <div class="container">
                 <div class="row">
@@ -334,7 +365,14 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-12">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
                         <div class="span4 collapse-group news-block">
                             <div class="news-text">Design by Paris Firm Moreau Kusunoki Architectes Wins Historic International Competition for Malmo Museum. </div>
                             <div class="date-event">June 3, 2016</div>
@@ -345,7 +383,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="span4 collapse-group news-block">
                             <div class="news-text">Previously Unseen Finalist Designs Go on View in Malmo Beginning April 25 in Free, Immersive Public Exhibition of the Gug Malmo Design Competition. </div>
                             <div class="date-event">April 23, 2016</div>
@@ -356,7 +394,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="span4 collapse-group news-block">
                             <div class="news-text">Submission Update. </div>
                             <div class="date-event">August 20, 2016</div>
@@ -368,7 +406,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <div class="span4 collapse-group news-block">
                             <div class="news-text">Gug Issues Global Call for Entries in Design Competition for New Proposed Malmo.</div>
                             <div class="date-event">September 26, 2016</div>
@@ -429,7 +467,7 @@
         </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -465,7 +503,7 @@
         </div>
         
     </section>
-    <section>
+    <section class="contacts" id="contacts">
         <iframe class="location-map" 
                 width="600"
                 height="500"

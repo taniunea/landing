@@ -6,9 +6,27 @@
 	text-transform: uppercase;
 	border: 2px solid $secondary-color; 
 	border-radius: 24px 24px;
+	background-color: transparent;
 }
 
 .button:hover {
+	background-color: $secondary-color;
+	text-decoration: none;
+	border: 2px solid $secondary-color; 
+	color: #fff;
+}
+
+.button__small {
+	color: $secondary-color;
+	margin: 0 auto;
+	padding: 2px 20px;
+	font-size: $font-size-h4;
+	text-transform: uppercase;
+	border: 2px solid $secondary-color; 
+	border-radius: 20px 20px;
+}
+
+.button__small:hover {
 	background-color: $secondary-color;
 	text-decoration: none;
 	border: 2px solid $secondary-color; 

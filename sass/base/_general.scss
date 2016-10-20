@@ -12,3 +12,11 @@ a:link {
 	outline-offset: none;
 }
 
+button,
+button:hover,
+button:focus,
+button:link {
+	outline: 0;
+	outline-offset: none;
+}
+
