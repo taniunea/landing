@@ -1,10 +1,45 @@
-$main-font: ('Roboto', sans-serif);
-$secondary-font: ('Open Sans', sans-serif);
+// fonts
+$main-font:                 ('Roboto', sans-serif);
+$secondary-font:            ('Open Sans', sans-serif);
 
-$font-size-xl: 3em; //42px
+// font-styles
+$italic:					italic;
 
-$base-color: #565656; //dark grey
-$primary-color: #9fb5dc; //bluesh
-$secondary-color: #f83579; //pink
-$font-grey: #b3b3b3; //lightgrey
+// size
+$font-size-default: 	    1em;						//14px
+$font-size-xs: 	            1.1428571429em;				//16px
+$font-size-sm:				1.2857142857em;				//18px
+$font-size-md:				1.7142857143em;				//24px
+$font-size-lg:				2.5714285714em;				//36px	
+$font-size-xl:              3em; 						//42px
 
+// colors
+$base-color:                rgba(0, 0, 0, 0.7); 		//dark grey
+$primary-color:             rgb(255, 255, 255); 		//white
+$secondary-color:           rgb(248, 53, 121); 			//pink
+$color-black:				rgb(0, 0, 0);				//black
+$color-grey:                rgba(0, 0, 0, 0.4); 		//grey
+$color-grey-light:          rgba(0, 0, 0, 0.1); 		//lightgrey
+$color-white-transp: 	    rgba(255, 255, 255, 0.4);	//white-transparency
+
+//padding
+$padding-xxs:				0.1428571429em;				//2px
+$padding-xs:				0.3571428571em;				//5px
+$padding-sm:				0.7142857143em;				//10px
+$padding-md:				1.0714285714em;				//15px
+$padding-mdd:				1.4285714286em;				//20px
+$padding-lg:				3.5714285714em;				//50px
+$padding-xl:				7.1428571429em;				//100px
+
+// margin
+$margin-sm:                 1.4285714286em;				//20px
+$margin-md:                 2.1428571429em;				//30px
+
+// width
+$full-width:				100%;						//100%
+
+// height
+$height-calculated:			calc(100vh - 100px);
+
+// aligning
+$center:					center;

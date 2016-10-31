@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "breakpoint-sass": "^2.6.1",
+    "jquery-parallax.js": "^1.4.3",
     "lightbox2": "^2.8.2"
   },
   "devDependencies": {

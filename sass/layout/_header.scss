@@ -1,24 +1,23 @@
 .header__motto {
-	background-image: url('/images/home_page.jpg');
+	background-image: url('/images/home_page_1.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: calc(100vh - 100px);
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-flow: column wrap;
+	height: $height-calculated;
+	
+	@extend.flexbox-center-center-column-nowrap;
 }
 
 .header-title {
-	text-align: center;
+	color: $base-color;
 	font-family: $main-font;
 	font-size: $font-size-xl;
-	letter-spacing: 3px;
-	padding-bottom: 3.5rem;
+	text-align: $center;
+	padding-bottom: $padding-md;
+	text-shadow: 2px 2px 2px $color-grey;
 }
 
 .header-title-lg {
-	font-size: larger;
-	font-style: italic;
 	color: $secondary-color;
+	font-size: larger;
+	font-style: $italic;
 }

@@ -1,0 +1,125 @@
+// media queries navicon
+@media only screen and (max-width: 1020px) {
+	.navigation__navicon {
+		display: block;
+		font-size: $font-size-md;
+		padding: 0 $padding-md;
+		color: $primary-color;
+		transition: all 0.5s ease-out;
+
+		&:hover {
+			color: $secondary-color;
+			cursor: pointer;
+		}	
+	}
+
+	.navigation__menu-item-navicon {
+		box-shadow: none;
+		border: 0;
+		
+		& input {
+			border-radius: 0;
+			border: none;
+		}
+	}
+
+	.navigation__menu,
+	.navigation__search {
+		display: none;
+	}
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+  	.header-title {
+  		font-size: 35px;
+  	}
+
+  	.navigation__logo-image {
+  		width: 90%;
+  	}
+
+  	.about,
+  	.jury {
+  		padding-bottom: 15px;
+  	}
+
+  	.motto {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+
+  	.title {
+  		font-size: $font-size-md;
+  	}
+
+  	.divider_pink {
+  		width: 20px;
+  		border-top: 3px solid $secondary-color;
+  	} 
+  	
+  	.paragraph {
+  		font-size: $font-size-default;
+  		margin-bottom: 0;
+  	}
+
+  	.text-grey,
+  	.text__absolute {
+  		font-size: 16px;
+  	}
+
+	.about__video {
+		padding-top: 15px;
+	}
+
+	.hovereffect {
+		margin-bottom: 15px;
+	}
+
+	.paragraph_white {
+	    padding: 15px 20px;
+	}
+
+	.gallery-item {
+		width: 50%;
+	}
+
+	.text-grey-md-bold {
+		font-size: 18px;
+	}
+
+	.read-more-state:checked ~ .read-more-wrap .read-more-target {
+		font-size: 14px;
+	}
+
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		height: auto;
+	}
+
+	.glyphicon-menu-left:before, 
+	.glyphicon-menu-right:before, {
+		line-height: 203px;
+	}
+
+	.carousel-caption {
+		padding-bottom: 0;
+		margin: 10px auto;
+	}
+
+	.carousel-indicators {
+		bottom: -5px;
+	}
+
+	.logos {
+		& a {
+			width: 60px;
+			height: 60px;
+			margin-bottom: 30px;
+		}
+	}
+}

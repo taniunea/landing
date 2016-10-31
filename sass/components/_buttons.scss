@@ -1,34 +1,105 @@
 .button {
-	color: $secondary-color;
-	margin: 0 auto;
-	padding: 5px 50px;
-	font-size: $font-size-h3;
-	text-transform: uppercase;
-	border: 2px solid $secondary-color; 
-	border-radius: 24px 24px;
 	background-color: transparent;
-}
+	color: $secondary-color;
+	font-size: $font-size-md;
+	text-transform: uppercase;
+  	text-shadow: 2px 2px 2px $color-grey; 
+	padding: $padding-xxs $padding-md;
+	border: $padding-xxs solid $secondary-color; 
+	border-radius: $padding-lg;
+	margin: 0 auto;
+	
+	@extend.transition;	
+	@extend.shadow; 
 
-.button:hover {
-	background-color: $secondary-color;
-	text-decoration: none;
-	border: 2px solid $secondary-color; 
-	color: #fff;
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color;
+		border: $padding-xxs solid $secondary-color; 
+	}
 }
 
 .button__small {
+	background-color: transparent;
 	color: $secondary-color;
-	margin: 0 auto;
-	padding: 2px 20px;
-	font-size: $font-size-h4;
+	font-size: $font-size-sm;
+	padding: $padding-xxs $padding-mdd;
 	text-transform: uppercase;
-	border: 2px solid $secondary-color; 
-	border-radius: 20px 20px;
+	border: $padding-xxs solid $secondary-color; 
+	border-radius: $padding-mdd;
+	margin: 0 auto;
+
+	@extend.transition;
+	@extend.shadow; 
+
+	&:hover {
+		background-color: $secondary-color;
+		color: $primary-color;
+		border: $padding-xxs solid $secondary-color;
+	}
 }
 
-.button__small:hover {
-	background-color: $secondary-color;
-	text-decoration: none;
-	border: 2px solid $secondary-color; 
-	color: #fff;
+.button__play {
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 200px;
+    margin: 0 auto;
+	
+}
+
+.load-more_button {
+	text-align: center;
+	margin-top: 2rem;
+}
+
+// news
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  color: $base-color;
+  
+ @extend.transition;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: $font-size-xs;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read less';
+}
+
+.read-more-trigger {
+  display: inline-block;
+  color: $secondary-color;
+  padding: 0 .5em;
+  font-size: .9em;
+  line-height: 2;
+  cursor: pointer;
+  font-style: italic;
+
+  @extend.transition;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.read-more-wrap {
+	.paragraph {
+		margin: 0;
+	}
 }

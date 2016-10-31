@@ -22,96 +22,149 @@
 
 .radisson {
 	background-image: url('/images/logo-partners - black/radisson.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/radisson.png');
+	}
 }
 
 
 .e-gov {
 	background-image: url('/images/logo-partners - black/e-gov.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/e-gov.png');
+	}
 }
 
 .piko {
 	background-image: url('/images/logo-partners - black/piko.png');
+
+	@extend.transition;
+
+	:hover {
+		background-image: url('/images/logo-partners/piko.png');
+	}
 }
 
 .nrg {
 	background-image: url('/images/logo-partners - black/nrg.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/nrg.png');
+	}
 }
 
 .magenta {
 	background-image: url('/images/logo-partners - black/magenta.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/magenta.png');
+	}
 }
 
 .umbrela {
 	background-image: url('/images/logo-partners - black/umbrela.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/umbrela.png');
+	}
 }
 
 .tekwill {
 	background-image: url('/images/logo-partners - black/tekwill.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/tekwill.png');
+	}
 }
 
 .smartvision {
 	background-image: url('/images/logo-partners - black/usaid.png');
+
+	@extend.transition;
+
+	&:hover {
+		background-image: url('/images/logo-partners/usaid.png');
+	}
 }
 
-.radisson:hover {
-	background-image: url('/images/logo-partners/radisson.png');
+.parallax-window {
+	background-color: transparent;
+	min-height: 600px;
 }
 
-.e-gov:hover {
-	background-image: url('/images/logo-partners/e-gov.png');
+.element {
+	animation: pulse 7s ease infinite alternate,
+			   nudge 10s linear infinite alternate;
 }
 
-.piko:hover {
-	background-image: url('/images/logo-partners/piko.png');
+@keyframes pulse {
+  0%, 100% {
+    background-color: $primary-color;
+  }
 }
 
-.nrg:hover {
-	background-image: url('/images/logo-partners/nrg.png');
+@keyframes nudge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  
+  50% {
+    transform: translateY(40px);
+  }
+  
+  80% {
+    transform: translateY(-40px);
+  }
 }
 
-.magenta:hover {
-	background-image: url('/images/logo-partners/magenta.png');
+.author-name {
+	padding-top: 20px;
 }
 
-.umbrela:hover {
-	background-image: url('/images/logo-partners/umbrela.png');
+
+.reviews {
+	height: 350px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+
 }
 
-.tekwill:hover {
-	background-image: url('/images/logo-partners/tekwill.png');
+.reviews-text {
+	width: 80%;
+	font-style: italic;
 }
 
-.smartvision:hover {
-	background-image: url('/images/logo-partners/usaid.png');
-}
-
-.quote {
-	background-image: url('/images/reviews.jpg');
-	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;	
-    height: 500px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-}
-
-.author {
-	height: 125px;
-	width: 125px;
-	border-radius: 50%;
-	background-image: url('/images/helena-sateri.jpg');
+.reviews-author {
+	background-image: url("/images/ritva-viljanen.jpg");
 	background-size: contain;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
-	margin-bottom: 30px;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }
 
-blockquote {
-    width: 50%;
-    margin: 0 20px;
-    border-left: 5px solid $secondary-color;
-    color: #fff;
-    text-align: justify;
+.reviews-author_rainer-mahlamaeki {
+	background-image: url("/images/rainer-mahlamaeki.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 }

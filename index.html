@@ -19,76 +19,69 @@
 <![endif]-->
 <div class="wrapper">
     <!--Header section start-->
-    <header class="header">
-        <div class="header__motto  container-fluid">
-            <div class="header-title">Malmö Design Competition <span class="header-title-lg">'17</span></div>
-            <button class="button" data-toggle="modal" data-target="#myModal" href="#">welcome</button>
-            <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Welcome to Malmö Design Competition</h4>
-                        </div>
-                        <div class="modal-body">
-                            In June 2016, the Solomon Foundation will launch its first open, anonymous, international design competition for a proposed Malmo museum in the Swedish city of Malmo. From all entries in Stage One, the 6-member jury will select six finalists. Following a public exhibition of the Stage Two finalist designs in Malmo, the jury will choose one as the competition winner.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default button__small" data-dismiss="modal">Continue</button>
-                        </div>
-                    </div>
-                </div>
+    <header class="header" id="header">
+        <div class="header__motto">
+            <div>
+                <h1 class="header-title">Malmö Design Competition <span class="header-title-lg">'17</span></h1>
             </div>
         </div>
+
+        <!-- Navbar -->
         <nav>
             <div class="navigation navbar-inverse" data-spy="affix" data-offset-top="700">
                 <div class="navigation__logo">
-                    <a href="#">
-                        <img src="/images/logo.png" alt="logo" class="navigation__logo-image">
+                    <a href="#header">
+                        <img src="/images/logo.png" alt="brand-logo" class="navigation__logo-image" />
                     </a>
                 </div>
-                <div class="navigation__menu">
-                    <a href="#about" class="navigation__menu-item" >about</a>
+                <div class="navigation__menu js-silky-smooth">
+                    <a href="#about" class="navigation__menu-item">about</a>
                     <a href="#jury" class="navigation__menu-item">jury</a>
                     <a href="#submissions" class="navigation__menu-item">submissions</a>
                     <a href="#news" class="navigation__menu-item">news</a>
                     <a href="#partners" class="navigation__menu-item">partners</a>
                     <div class="dropdown">
-                        <a href="#" class="navigation__menu-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">contacts <span class="caret"></span></a>
+                        <a href="#" class="navigation__menu-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">contact <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                            <li><a href="#" class="">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#" class="">contact 1</a></li>
+                            <li><a href="#">contact 2</a></li>
+                            <li><a href="#">contact 3</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">see map</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="navigation__navicon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#9776;</div>
-                    <ul class="dropdown-menu">
-                        <li><a href="#about" class="navigation__menu-item-navicon">about</a></li>
-                        <li><a href="#jury" class="navigation__menu-item-navicon">jury</a></li>
-                        <li><a href="#submissions" class="navigation__menu-item-navicon">submissions</a></li>
-                        <li><a href="#news" class="navigation__menu-item-navicon">news</a></li>
-                        <li><a href="#partners" class="navigation__menu-item-navicon">partners</a></li>
-                        <li><a href="#contacts" class="navigation__menu-item-navicon">contacts</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><form class="navbar-form navbar-left">
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Search">
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-
                 <div class="navigation__search">
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Search">
+                          <input type="text" class="form-control-navbar" placeholder="Search" role="search" />
                         </div>
                     </form>
                 </div>
+
+                <!-- Navicon -->
+                <div class="navigation__navicon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#9776;
+                </div>
+                <ul class="dropdown-menu extendable-menu js-silky-smooth">
+                    <li class="navigation__menu-item-navicon">
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a href="#jury" class="navigation__menu-item-navicon">jury</a>
+                    </li>
+                    <li>
+                        <a href="#submissions" class="navigation__menu-item-navicon">submissions</a>
+                    </li>
+                    <li>
+                        <a href="#news" class="navigation__menu-item-navicon">news</a>
+                    </li>
+                    <li>
+                        <a href="#partners" class="navigation__menu-item-navicon">partners</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="navigation__menu-item-navicon">contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -99,7 +92,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="motto">
-                        <div class="divider"></div>
+                        <div class="divider_pink"></div>
                         <div class="title">about</div>
                     </div>
                 </div>
@@ -108,66 +101,78 @@
         <div class="about-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="paragraph">
+                    <div class="col-lg-9">
+                        <p class="paragraph">
                             An increasingly popular visitor destination, Malmo serves as a standard bearer for Sweden and a model for cities around the world, benefiting from an exceptional education system, entrepreneurial spirit, and appetite for innovation.
-                        </div>
-                        <div class="paragraph">
+                        </p>
+                        <p class="paragraph">
                             Malmo Design Competition was the first open, international architectural competition to be organized by the Solomon R. Gug Foundation.  The site is located in the Eteläsatama, or South Harbor, area, an urban space of great national and cultural significance, close to the historic city center and immediately visible to visitors arriving by sea.This initiative reflected the Gug’s long history of engagement with architecture and design and its belief that outstanding original design can speak across cultures, refreshing and enlivening the urban environment.
-                        </div>
-                        <div class="paragraph">
+                        </p>
+                        <p class="paragraph">
                             Following a detailed concept and development study by the Gug Foundation, the City of Malmo reserved a prominent waterfront site for the architectural competition of the proposed museum. The site is located in the Eteläsatama, or South Harbor, area, an urban space of great national and cultural significance, close to the historic city center and immediately visible to visitors arriving by sea. Malmo Design Competition was the first open, international architectural competition to be organized by the Solomon R. Gug Foundation. The City of Malmo reserved a prominent waterfront site for the architectural competition of the proposed museum.
-                        </div>
-                        <div class="paragraph">
+                        </p>
+                        <p class="paragraph">
                             It is envisaged that the Malmo would organize and present internationally significant exhibitions of artworks from the twentieth and twenty-first centuries while also specializing in Nordic art and architecture. Within the Gug Foundation’s international constellation of museums, including the Solomon R. Gug Museum in New York, the Peggy Gug Collection in Venice, the Museum Bilbao, and the future Gug Abu Dhabi, the Malmo would be distinctive in its active inclusion of design and architecture in its programming. The site is located in the Eteläsatama, or South Harbor, area, an urban space of great national and cultural significance, close to the historic city center and immediately visible to visitors arriving by sea. 
-                        </div>
-                        <div class="paragraph">
+                        </p>
+                        <p class="paragraph">
                             From a global perspective, Malmoi is emerging as a city to watch. Standing at the intersection of East and West, malmo has one of the fastest-growing metropolitan areas in Europe. The city recently embarked on an ambitious yet highly sensitive program of renewal and development, initiating the greatest urban change in its history since Malmo became two hundred years ago. Within the Gug Foundation’s international constellation of museums, including the Solomon R. Gug Museum in New York, the Peggy Gug Collection in Venice, the Museum Bilbao, and the future Gug Abu Dhabi, the Malmo would be distinctive in its active inclusion of design and architecture in its programming.he proposed Malmo Museum will be an innovative, multidisciplinary museum of art and design. It should be of the highest architectural quality, creating a meaningful presence in Malmo and offering civic space where both residents and visitors can gather. It should be of the highest architectural quality, creating a meaningful presence in Malmo and offering civic space.
-                        </div>
-                        <div class="paragraph">
-                            Visit <a href="https://www.google.com/" class="date-event">www.google.com</a> for more information about the museum proposal.
-                        </div>
+                        </p>
+                        <p class="paragraph">
+                            Visit <a href="https://www.google.com/" class="paragraph_grey">www.google.com</a> for more information about the museum proposal.
+                        </p>
                     </div>
-                    <div class="col-lg-offset-1 col-lg-3">
+                    <div class="col-lg-3">
                         <div class="sidebar">
                             <div class="conditions">
-                                <div class="conditions__title spacing text"> Competition Conditions</div>
+                                <div class="text-grey spacing"> Competition Conditions</div>
                                 <div class="conditions__video">
-                                    <video width="100%" height="100%" controls>
-                                        <source src="/images/pass-countdown.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    <div class="conditions__video-img">
+                                        <span class=" glyphicon glyphicon-play button__play" aria-hidden="true" data-toggle="modal" data-target=".bd-example-modal-lg"></span>
+                                        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close"    data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </div>
+                                                    <video width="100%" height="100%" controls>
+                                                        <source src="/images/pass-countdown.ogg" type="video/ogg" />
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>                            
                             <div class="timeline">
-                                <div class="timeline__title spacing text">Timeline</div>
+                                <div class="text-grey spacing">Timeline</div>
                                 <div class="timeline__item">
                                     <div class="date-day">June 2, 2016</div>
-                                    <div class="date-event">Launch</div>
+                                    <div class="paragraph_grey">Launch</div>
                                 </div>
                                 <div class="timeline__item">
                                     <div class="date-day">August 15, 2016</div>
-                                    <div class="date-event">Deadline for Q&As</div>
+                                    <div class="paragraph_grey">Deadline for Q&As</div>
                                 </div>
                                 <div class="timeline__item">
                                     <div class="date-day">September 10, 2016</div>
-                                    <div class="date-event">Stage One Submission Deadline</div>
+                                    <div class="paragraph_grey">Stage One Submission Deadline</div>
                                 </div>
                                 <div class="timeline__item">
                                     <div class="date-day">December 2, 2016</div>
-                                    <div class="date-event">Stage Two Launch</div>
+                                    <div class="paragraph_grey">Stage Two Launch</div>
                                 </div>
                                 <div class="timeline__item">
                                     <div class="date-day">April 2, 2017</div>
-                                    <div class="date-event">Stage Two Submission Deadline</div>
+                                    <div class="paragraph_grey">Stage Two Submission Deadline</div>
                                 </div>
                                 <div class="timeline__item">
                                     <div class="date-day">April 25 - May 16, 2017</div>
-                                    <div class="date-event">Public Exhibition of Finalists' Design</div>
+                                    <div class="paragraph_grey">Public Exhibition of Finalists' Design</div>
                                 </div>
                                 <div class="timeline__item">
                                     <div class="date-day">June 23, 2017</div>
-                                    <div class="date-event">Winner Announced</div>
+                                    <div class="paragraph_grey">Winner Announced</div>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +196,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="motto">
-                        <div class="divider"></div>
+                        <div class="divider_pink"></div>
                         <div class="title">jury</div>
                     </div>
                 </div>
@@ -201,19 +206,23 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/ritva-viljanen.jpg" alt="Ritva Viljanen">
+                        <img class="img-responsive" src="/images/ritva-viljanen.jpg" alt="Ritva Viljanen" />
                         <div class="overlay">
-                            <h2>Ritva Viljanen</h2>
-                            <p class="date-event">Jury Chair, Deputy Mayor, City of Helsinki<br>Ritva Viljanen serves as Deputy Mayor of the City of Helsinki, in charge of Educational and Cultural Affairs. Before becoming Deputy Mayor, Mrs. Viljanen was Permanent Secretary of the Ministry of the Interior (2003–2012) and Director General of the Population Register Centre (1997–2003).</p>                        
+                            <p class="paragraph_white">Jury Chair, Deputy Mayor, City of Helsinki<br>Ritva Viljanen serves as Deputy Mayor of the City of Helsinki, in charge of Educational and Cultural Affairs. Before becoming Deputy Mayor, Mrs. Viljanen was Permanent Secretary of the Ministry of the Interior (2003–2012) and Director General of the Population Register Centre (1997–2003).</p>                        
+                        </div>
+                        <div>
+                            <p class="text__absolute">Ritva Viljanen</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/mark-wigley.jpg" alt="Mark Wigley">
+                        <img class="img-responsive" src="/images/mark-wigley.jpg" alt="Mark Wigley" />
                         <div class="overlay">
-                            <h2>Mark Wigley</h2>
-                            <p class="date-event">Professor of Architecture and Dean Emeritus of the Graduate School of Architecture, Planning and Preservation Columbia University<br>An accomplished scholar and design teacher, Mark Wigley has written extensively on the theory and practice of architecture and is the author of Constant’s New Babylon: The Hyper-Architecture of Desire (1998); White Walls, Designer Dresses: The Fashioning of Modern Architecture (1995).</p>
+                            <p class="paragraph_white">Professor of Architecture and Dean Emeritus of the Graduate School of Architecture, Planning and Preservation Columbia University<br>An accomplished scholar and design teacher, Mark Wigley has written extensively on the theory and practice of architecture and is the author of Constant’s New Babylon: The Hyper-Architecture of Desire (1998); White Walls, Designer Dresses: The Fashioning of Modern Architecture (1995).</p>
+                        </div>
+                        <div>
+                            <p class="text__absolute">Mark Wigley</p>
                         </div>
                     </div>
                 </div>
@@ -221,8 +230,10 @@
                     <div class="hovereffect">
                         <img class="img-responsive" src="/images/juan-herreros.jpg" alt="Juan Herreros">
                         <div class="overlay">
-                            <h2>Juan Herreros</h2>
-                            <p class="date-event">Professor, and Founder, Estudio Herreros<br>Juan Herreros is Chair Professor at the School of Architecture of Madrid and Full Professor at the Graduate School of Architecture of Columbia University. He runs Herreros Arquitectos, an office of 20 architects based in Madrid.</p>                        
+                            <p class="paragraph_white">Professor, and Founder, Estudio Herreros<br>Juan Herreros is Chair Professor at the School of Architecture of Madrid and Full Professor at the Graduate School of Architecture of Columbia University. He runs Herreros Arquitectos, an office of 20 architects based in Madrid.</p>                        
+                        </div>
+                        <div>
+                            <p class="text__absolute">Juan Herreros</p>
                         </div>
                     </div>
                 </div>  
@@ -230,8 +241,10 @@
                     <div class="hovereffect">
                         <img class="img-responsive" src="/images/mikko-aho.jpg" alt="Mikko Aho">
                         <div class="overlay">
-                            <h2>Mikko Aho</h2>
-                            <p class="date-event">Director, City Planning and Architect, Helsinki City Planning Department<br>Mikko Aho is currently the Director of City Planning at the City of Helsinki. Previously he served both as Municipal Manager and Director of Development of the Municipality of Sipoo. He has also been the Technical Director of the City of Karkkila and City Planner at the Municipality of Mäntsälä.</p>
+                            <p class="paragraph_white">Director, City Planning and Architect, Helsinki City Planning Department<br>Mikko Aho is currently the Director of City Planning at the City of Helsinki. Previously he served both as Municipal Manager and Director of Development of the Municipality of Sipoo. He has also been the Technical Director of the City of Karkkila and City Planner at the Municipality of Mäntsälä.</p>
+                        </div>
+                         <div>
+                            <p class="text__absolute">Mikko Aho</p>
                         </div>
                     </div>
                 </div> 
@@ -239,8 +252,10 @@
                     <div class="hovereffect">
                         <img class="img-responsive" src="/images/rainer-mahlamaeki.jpg" alt="Rainer Mahlamaeki">
                         <div class="overlay">
-                            <h2>Rainer Mahlamaeki</h2>
-                            <p class="date-event">Professor, and Founder, Lahdelma & Mahlamäki Architects<br>Rainer Mahlamäki is a Finnish architect and Professor of Contemporary Architecture at the University of Oulu. He is a partner of Lahdelma & Mahlamäki Architects and served as President of the Finnish Association of Architects (SAFA) between 2007 and 2011.</p>
+                            <p class="paragraph_white">Professor, and Founder, Lahdelma & Mahlamäki Architects<br>Rainer Mahlamäki is a Finnish architect and Professor of Contemporary Architecture at the University of Oulu. He is a partner of Lahdelma & Mahlamäki Architects and served as President of the Finnish Association of Architects (SAFA) between 2007 and 2011.</p>
+                        </div>
+                         <div>
+                            <p class="text__absolute">Rainer Mahlamaeki</p>
                         </div>
                     </div>
                 </div>
@@ -248,8 +263,10 @@
                     <div class="hovereffect">
                         <img class="img-responsive" src="/images/helena-sateri.jpg" alt="Helena Sateri">
                         <div class="overlay">
-                            <h2>Helena Sateri</h2>
-                            <p class="date-event">Director General, the Ministry of the Environment, Finland<br>Since August 2008, Helena Säteri has been Director General at the Ministry of the Environment in Finland and works as the Chief of the Department of the Built Environment. Prior to her current role, Mrs. Säteri worked in different positions at the Ministry and as Executive Director at the National HVAC-federation.</p>
+                            <p class="paragraph_white">Director General, the Ministry of the Environment, Finland<br>Since August 2008, Helena Säteri has been Director General at the Ministry of the Environment in Finland and works as the Chief of the Department of the Built Environment. Prior to her current role, Mrs. Säteri worked in different positions at the Ministry and as Executive Director at the National HVAC-federation.</p>
+                        </div>
+                         <div>
+                            <p class="text__absolute">Helena Sateri</p>
                         </div>
                     </div>
                 </div>                
@@ -262,7 +279,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="motto">
-                        <div class="divider"></div>
+                        <div class="divider_pink"></div>
                         <div class="title">submissions</div>
                     </div>
                 </div>
@@ -273,81 +290,118 @@
         <div>
             <div class="gallery">
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_1.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_1.jpg" alt="Project_1" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-1</div>
+                    <a href="/images/projects-entries/project_1.jpg" data-title="ML-1" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_1.jpg" alt="Project_1" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-1</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_2.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_2.jpg" alt="Project_2" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-2</div>
+                    <a href="/images/projects-entries/project_2.jpg" data-title="ML-2" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_2.jpg" alt="Project_2" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-2</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_3.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_3.jpg" alt="Project_3" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-3</div>
+                    <a href="/images/projects-entries/project_3.jpg" data-title="ML-3" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_3.jpg" alt="Project_3" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-3</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_4.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_4.jpg" alt="Project_4" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-4</div>
+                    <a href="/images/projects-entries/project_4.jpg" data-title="ML-4" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_4.jpg" alt="Project_4" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-4</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_5.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_5.jpg" alt="Project_5" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-5</div>
+                    <a href="/images/projects-entries/project_5.jpg" data-title="ML-5" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_5.jpg" alt="Project_5" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-5</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_6.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_6.jpg" alt="Project_6" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-6</div>
+                    <a href="/images/projects-entries/project_6.jpg" data-title="ML-6" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_6.jpg" alt="Project_6" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-6</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_7.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_7.jpg" alt="Project_7" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-7</div>
+                    <a href="/images/projects-entries/project_7.jpg" data-title="ML-7" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_7.jpg" alt="Project_7" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-7</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_8.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_8.jpg" alt="Project_8" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-8</div>
+                    <a href="/images/projects-entries/project_8.jpg" data-title="ML-8" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_8.jpg" alt="Project_8" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-8</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_9.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_9.jpg" alt="Project_9" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-9</div>
+                    <a href="/images/projects-entries/project_9.jpg" data-title="ML-9" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_9.jpg" alt="Project_9" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-9</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_10.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_10.jpg" alt="Project_10" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-10</div>
+                    <a href="/images/projects-entries/project_10.jpg" data-title="ML-10" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_10.jpg" alt="Project_10" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-10</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_11.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_11.jpg" alt="Project_11" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-11</div>
+                    <a href="/images/projects-entries/project_11.jpg" data-title="ML-11" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_11.jpg" alt="Project_11" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-11</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_12.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_12.jpg" alt="Project_12" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-12</div>
+                    <a href="/images/projects-entries/project_12.jpg" data-title="ML-12" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_12.jpg" alt="Project_12" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-12</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_13.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_13.jpg" alt="Project_13" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-13</div>
+                    <a href="/images/projects-entries/project_13.jpg" data-title="ML-13" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_13.jpg" alt="Project_13" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-13</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_14.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_14.jpg" alt="Project_14" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-14</div>
+                    <a href="/images/projects-entries/project_14.jpg" data-title="ML-14" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_14.jpg" alt="Project_14" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-14</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_15.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_15.jpg" alt="Project_15" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-15</div>
+                    <a href="/images/projects-entries/project_15.jpg" data-title="ML-15" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_15.jpg" alt="Project_15" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-15</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_16.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_16.jpg" alt="Project_16" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-16</div>
+                    <a href="/images/projects-entries/project_16.jpg" data-title="ML-16" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_16.jpg" alt="Project_16" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-16</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_17.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_17.jpg" alt="Project_17" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-17</div>
+                    <a href="/images/projects-entries/project_17.jpg" data-title="ML-17" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_17.jpg" alt="Project_17" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-17</div>
                 </div>
                 <div class="gallery-item">
-                    <a href="/images/projects-entries/project_18.jpg" data-lightbox="projects-gallery"><img src="/images/projects-entries/project_18.jpg" alt="Project_18" class="gallery-item__image"></a>
-                    <div class="image-caption date-day">ML-18</div>
+                    <a href="/images/projects-entries/project_18.jpg" data-title="ML-18" data-lightbox="projects-gallery" class="darken">
+                        <img src="/images/projects-entries/project_18.jpg" alt="Project_18" class="gallery-item__image" />
+                    </a>
+                    <div class="image-caption">ML-18</div>
                 </div>
             </div>
-            <div class="gallery__load-more">
-                <a href="#" class="text__grey">load more</a>
+            <div class="load-more_button">
+                <button type="button" class="button__small">load more</button>
             </div>
+            
         </div>
     </section>
 
@@ -357,7 +411,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="motto">
-                            <div class="divider"></div>
+                            <div class="divider_pink"></div>
                             <div class="title">news</div>
                         </div>
                     </div>
@@ -372,48 +426,45 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="span4 collapse-group news-block">
-                            <div class="news-text">Design by Paris Firm Moreau Kusunoki Architectes Wins Historic International Competition for Malmo Museum. </div>
-                            <div class="date-event">June 3, 2016</div>
-                            <div class="paragraph">Jury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. Jury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. 
-                                <div class="collapse" id="viewdetails1"> Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition. Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for. the Gug Malmo Design Competition. </div><a data-toggle="collapse" data-target="#viewdetails1" class="read-more">Read more... &raquo;</a>
+                    <div class="col-lg-12">
+                        <div class="news-block">
+                            <input type="checkbox" class="read-more-state" id="post-1" />
+                            <div class="read-more-wrap">
+                                <p class="text-grey-md-bold">Design by Paris Firm Moreau Kusunoki Architectes Wins Historic International Competition for Malmo Museum.</p>
+                                <p class="paragraph_grey">June 3, 2016</p>
+                                <p class="paragraph">Jury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. Jury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition.This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. Tags are not required, and the jury will not take tags into consideration when assessing the submissions.</p>
+                                <p class="read-more-target">Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition. Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for. the Gug Malmo Design Competition. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. During and following the competition period, the Guggenheim will continue its ongoing series of public programs, Guggenheim Helsinki Live, to invite discussion and exploration of the ideas behind the proposed museum project. The event series will be produced in collaboration with the Guggenheim Helsinki Supporting Foundation, and several of the public programs will be developed with Aalto University School of Arts, Design and Architecture.</p>
                             </div>
+                            <label for="post-1" class="read-more-trigger"></label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="span4 collapse-group news-block">
-                            <div class="news-text">Previously Unseen Finalist Designs Go on View in Malmo Beginning April 25 in Free, Immersive Public Exhibition of the Gug Malmo Design Competition. </div>
-                            <div class="date-event">April 23, 2016</div>
-                            <div class="paragraph">Jury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. ury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. 
-                                <div class="collapse" id="viewdetails2"> Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for. the Gug Malmo Design Competition. </div><a data-toggle="collapse" data-target="#viewdetails2" class="read-more">Read more... &raquo;</a>
+                    <div class="col-lg-12">
+                        <div class="news-block">
+                            <input type="checkbox" class="read-more-state" id="post-2" />
+                            <div class="read-more-wrap">
+                                <p class="text-grey-md-bold">Previously Unseen Finalist Designs Go on View in Malmo Beginning April 25 in Free, Immersive Public Exhibition of the Gug Malmo Design Competition.</p>
+                                <p class="paragraph_grey">April 23, 2016</p>
+                                <p class="paragraph">This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. Jury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. ury Selects Proposal Featuring Collection of Linked Pavilions from 1,715 Submissions to Unprecedented, Anonymous Competition. Tags are not required, and the jury will not take tags into consideration when assessing the submissions.</p>
+                                <p class="read-more-target">Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for. the Gug Malmo Design Competition. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. During and following the competition period, the Guggenheim will continue its ongoing series of public programs, Guggenheim Helsinki Live, to invite discussion and exploration of the ideas behind the proposed museum project. The event series will be produced in collaboration with the Guggenheim Helsinki Supporting Foundation, and several of the public programs will be developed with Aalto University School of Arts, Design and Architecture.</p>
                             </div>
+                            <label for="post-2" class="read-more-trigger"></label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="span4 collapse-group news-block">
-                            <div class="news-text">Submission Update. </div>
-                            <div class="date-event">August 20, 2016</div>
-                            <div class="paragraph">We are very much looking forward to receiving your Stage One design submission for the Gug Malmo Design Competition.
-                                <div class="collapse" id="viewdetails3">The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. During and following the competition period, the Guggenheim will continue its ongoing series of public programs, Guggenheim Helsinki Live, to invite discussion and exploration of the ideas behind the proposed museum project. The event series will be produced in collaboration with the Guggenheim Helsinki Supporting Foundation, and several of the public programs will be developed with Aalto University School of Arts, Design and Architecture.</div>
-                                <a data-toggle="collapse" data-target="#viewdetails3" class="read-more">Read more... &raquo;</a>
+                    <div class="col-lg-12">
+                        <div class="news-block">
+                            <input type="checkbox" class="read-more-state" id="post-3" />
+                            <div class="read-more-wrap">
+                                <p class="text-grey-md-bold">Submission Update.</p>
+                                <p class="paragraph_grey">February 20, 2016</p>
+                                <p class="paragraph">We are very much looking forward to receiving your Stage One design submission for the Gug Malmo Design Competition. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.Submission Update. We are very much looking forward to receiving your stage one design submission for the Gug Malmo Design Competition.</p>
+                                <p class="read-more-target">The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. During and following the competition period, the Guggenheim will continue its ongoing series of public programs, Guggenheim Helsinki Live, to invite discussion and exploration of the ideas behind the proposed museum project. The event series will be produced in collaboration with the Guggenheim Helsinki Supporting Foundation, and several of the public programs will be developed with Aalto University School of Arts, Design and Architecture. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. During and following the competition period, the Guggenheim will continue its ongoing series of public programs, Guggenheim Helsinki Live, to invite discussion and exploration of the ideas behind the proposed museum project. The event series will be produced in collaboration with the Guggenheim Helsinki Supporting Foundation, and several of the public programs will be developed with Aalto University School of Arts, Design and Architecture.</p>
                             </div>
+                            <label for="post-3" class="read-more-trigger"></label>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="span4 collapse-group news-block">
-                            <div class="news-text">Gug Issues Global Call for Entries in Design Competition for New Proposed Malmo.</div>
-                            <div class="date-event">September 26, 2016</div>
-                                <div class="paragraph">This is the first time that the Guggenheim Foundation, long recognized for commissioning transformational works of architecture, has sought a design through an open competition.<div class="collapse" id="viewdetails4">This is the first time that the Guggenheim Foundation, long recognized for commissioning transformational works of architecture, has sought a design through an open competition. It is embarking on this new course in one of the fastest-growing metropolitan areas in Europe, located at the intersection of East and West and respected internationally for its heritage of modern architecture and design. The firm or team selected through this competition will take its place in the lineage of both Helsinki, as exemplified by renowned architects such as Alvar Aalto and Eliel Saarinen, and of the Guggenheim, with its landmark buildings by Frank Lloyd Wright and Frank Gehry and first-of-its-kind carbon-fiber structure by Atelier Bow-Wow created for the BMW Guggenheim Lab. The Guggenheim is organizing the architectural competition in consultation with the City of Helsinki, the State of Finland, and the Finnish Association of Architects (SAFA). The competition is managed by the London-based firm Malcolm Reading Consultants, a specialist in architectural competitions for arts, heritage, and nonprofit organizations. Notice of the competition will be published in accordance with European Union procurement regulations.</div>
-                                <a data-toggle="collapse" data-target="#viewdetails4" class="read-more">Read more... &raquo;</a>
-                            </div>
-                        </div> 
                     </div>
                 </div>
             </div>
@@ -432,24 +483,24 @@
               <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="/images/slider_2.jpg" alt="Image">
+                    <img src="/images/slider_3.jpg" alt="Image" />
                     <div class="carousel-caption">
-                        <div class="title">50 projects</div>
-                        <div class="text">per day</div>
+                        <div class="text-grey-md-bold">77 countries</div>
+                        <div class="text-grey">may apply</div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/a.png" alt="Image">
+                    <img src="/images/slider_2.jpg" alt="Image" />
                     <div class="carousel-caption">
-                        <div class="title">1700 submissions</div>
-                        <div class="text">till today</div>
+                        <div class="text-grey-md-bold">50 projects</div>
+                        <div class="text-grey">per day</div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/slider_3.jpg" alt="Image">
+                    <img src="/images/a.png" alt="Image" />
                     <div class="carousel-caption">
-                        <div class="title">77 countries</div>
-                        <div class="text">applied</div>
+                        <div class="text-grey-md-bold">1700 submissions</div>
+                        <div class="text-grey">till today</div>
                     </div>
                 </div>
             </div>
@@ -457,11 +508,11 @@
 
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
@@ -472,7 +523,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="motto">
-                        <div class="divider"></div>
+                        <div class="divider_pink"></div>
                         <div class="title">partners</div>
                     </div>
                 </div>
@@ -480,41 +531,204 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="logos">
-                        <a href="https://www.radissonblu.com/en/hotel-chisinau" class="radisson backgr_center"></a>
-                        <a href="http://www.egov.md/ro" class="e-gov backgr_center"></a>
-                        <a href="http://piko.md" class="piko backgr_center"></a>
-                        <a href="http://nrg.md/" class="nrg backgr_center"></a>
+                        <a href="https://www.radissonblu.com/en/hotel-chisinau" target="_blank" class="radisson backgr_center"></a>
+                        <a href="http://www.egov.md/ro" target="_blank" class="e-gov backgr_center"></a>
+                        <a href="http://piko.md" target="_blank" class="piko backgr_center"></a>
+                        <a href="http://nrg.md/" target="_blank" class="nrg backgr_center"></a>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="logos">
-                        <a href="http://consulting.md/" class="magenta backgr_center"></a>
-                        <a href="http://umbrela.md" class="umbrela backgr_center"></a>
-                        <a href="#" class="tekwill backgr_center"></a>
-                        <a href="http://smartvision.md/" class="smartvision backgr_center"></a>
+                        <a href="http://consulting.md/" target="_blank" class="magenta backgr_center"></a>
+                        <a href="http://umbrela.md" target="_blank" class="umbrela backgr_center"></a>
+                        <a href="https://www.facebook.com/tekwill/" target="_blank" class="tekwill backgr_center"></a>
+                        <a href="http://smartvision.md/" target="_blank" class="smartvision backgr_center"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="quote">
-            <div class="author"></div>
-            <blockquote>Malmo Design Competition Submissions Revealed. Online Gallery of Stage One Submissions allows visitors to Explore Entries and Share their Top selections. nline Gallery of Stage One Submissions allows visitors to Explore Entries and Share their Top selections.</blockquote>
-
+        <div class="parallax-effect">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="/images/1-3x.jpg">
+            </div>
+            <div class="reviews element">
+                <div class="reviews-author"></div>
+                <div class="author-name"><p class="text-grey-md-bold">Theo Merkel</p></div>
+                <div class="reviews-text">
+                   <blockquote class="paragraph">
+                       This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing.
+                   </blockquote>
+                </div>
+            </div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="/images/reviews.jpg">
+            </div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="/images/1-2x.jpg">
+            </div>
+            <div class="reviews element">
+                <div class="reviews-author_rainer-mahlamaeki"></div>
+                <div class="author-name"><p class="text-grey-md-bold">Theo Merkel</p></div>
+                <div class="reviews-text">
+                   <blockquote class="paragraph">
+                       This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing. Tags are not required, and the jury will not take tags into consideration when assessing the submissions. The form will include an option for competitors to tag their JPEG images. This option is being offered to enhance the visitor experience of the online gallery, which will be available for public viewing.
+                   </blockquote>
+                </div>
+            </div>
+            <div class="parallax-window" data-parallax="scroll" data-image-src="/images/1-4x.jpg">
+            </div>
         </div>
-        
+            <!-- <div class="parallax-window">
+                <div class="parallax-slider">
+                     <img src="/images/reviews.jpg" >
+
+                    <span style="position:absolute; top: 400px; left: 400px;">Some Text</span>
+                    <p>Some other Content</p>
+                </div>
+            </div>
+            <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="images/reviews.jpg" data-natural-width="1400" data-natural-height="900" style="height: 360px;" --><!-- ></div> -->
     </section>
+
     <section class="contacts" id="contacts">
-        <iframe class="location-map" 
-                width="600"
-                height="500"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAC8PYMXZ0Lo7vlTt7V9u5IFWUpsCiMHeQ&q=Endava+Tower" allowfullscreen>
-        </iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="motto">
+                        <div class="divider_pink"></div>
+                        <div class="title">contact</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-personal">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-grey-md-bold">Office in Malmo</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="text-grey-bold">Peter Bold</h2>
+                        <p class="paragraph">
+                            Bucuresti 36/2,<br>Chisinau MD-2012,<br>Moldova</p>
+                        <a href="javascript:void(0);" class="text-grey">+373 22 815 136<br>p.bold@malmo.se</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="text-grey-bold">Monica Stultz</h2>
+                        <p class="paragraph">
+                            Bucuresti 36/2,<br>Chisinau MD-2012,<br>Moldova</p>
+                        <a href="javascript:void(0);" class="text-grey">+373 22 815 136<br>p.bold@malmo.se</a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="text-grey-bold">John Walker</h2>
+                        <p class="paragraph">
+                            Bucuresti 36/2,<br>Chisinau MD-2012,<br>Moldova</p>
+                        <a href="javascript:void(0);" class="text-grey">+373 22 815 136<br>p.bold@malmo.se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-grey-md-bold">Contact Us</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="col-lg-4 spacing">
+                        <div class="form">
+                            <label for="full__name" class="text-grey-sm">full name</label>
+                            <div>
+                                <input type="text" name="full__name" class="input_contact" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 spacing">
+                        <div class="form">
+                            <label for="full__name" class="text-grey-sm">e-mail address</label>
+                            <div>
+                                <input type="text" name="full__name" class="input_contact" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 spacing">
+                        <div class="form">
+                            <label for="full__name" class="text-grey-sm">category</label>
+                            <select class="selectpicker">
+                                <option>Select your status</option>
+                                <option>Student</option>
+                                <option>Intern</option>
+                                <option>Professional</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form">
+                            <label for="comment" class="text-grey-sm">Comment:</label>
+                              <textarea class="form-control" rows="5" id="comment" placeholder="Please enter your comments here"></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <button class="button" data-toggle="modal" data-target="#myModal" href="javascript:void(0);">submit</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">Malmö Design Competition</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Thank you for your interest. Your message will be procesed and you will get soon a reply. We appreciate your desire to stay in touch with us.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default button__small" data-dismiss="modal">continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="text-grey-md-bold">Locate Us</h2>
+                    <div class="divider"></div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe class="location-map" 
+                    width="600"
+                    height="500"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAC8PYMXZ0Lo7vlTt7V9u5IFWUpsCiMHeQ&q=Endava+Tower" allowfullscreen scrolling="no">
+            </iframe>
+        </div>
     </section>
 
     <!--Footer section-->
-    <footer class="footer">
-        
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <div>
+                        <a href="#header">
+                            <img src="/images/logo.png" alt="brand-logo" class="navigation__logo-image" />
+                        </a>
+                    </div>
+                    <div>
+                        <div>&copy 2016 Malmo. All Rights Reserved.</div>
+                    </div>
+                    <div class="social-icons">
+                        <div class="sprite-facebook"></div>
+                        <div class="sprite-twitter"></div>
+                        <div class="sprite-googleplus"></div>
+                        <div class="sprite-pinterest"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </div>
@@ -524,6 +738,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
 <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
+<script src="node_modules/jquery-parallax.js/parallax.js"></script>
 <!--Import custom scripts -->
 <script src="js/main.js" type="text/javascript"></script>
 </body>

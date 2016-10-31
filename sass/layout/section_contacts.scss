@@ -1,3 +1,41 @@
+.form {
+	padding-bottom: $padding-lg;
+}
+
+// contact form
+.form-area {
+	padding-top: 30px;
+}
+
+.contact-form {
+	padding-bottom: 50px;
+}
+
+.contact-personal {
+	padding-bottom: 100px;
+}
+
+.submit-button {
+	text-align: center;
+}
+
+
+
+// map
 .location-map {
 	width: 100%;
 }
+
+.map-container iframe{
+	width: 100%;
+	display: block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+	pointer-events: auto;
+}
+
+
+// sticky
+

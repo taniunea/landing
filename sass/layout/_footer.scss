@@ -1,4 +1,69 @@
+footer {
+	background-color: $color-black;
+	height: 70px;
+}
+
 .footer {
 	height: 70px;
-	background-color: rgb(0, 0, 0);
+	background-color: $color-black;
+
+	@extend.flexbox-spacebetween-center-row-nowrap;
+}
+
+.social-icons {
+	width: 200px;
+	padding-right: 15px;
+	@extend.flexbox-spacebetween-center-row-nowrap;
+}
+
+.sprite-facebook {
+	background: url('/images/social_icon.png') no-repeat 0 -95px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+
+	&:hover {
+		background: url('/images/social_icon.png') no-repeat -49px -95px;
+		width: 32px;
+		height: 32px;
+	}
+}
+
+.sprite-twitter {
+	background: url('/images/social_icon.png') no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+
+	&:hover {
+		background: url('/images/social_icon.png') no-repeat -49px 0;
+		width: 32px;
+		height: 32px;
+	}
+} 
+
+.sprite-googleplus {
+	background: url('/images/social_icon.png') no-repeat 0 -142px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+
+	&:hover {
+		background: url('/images/social_icon.png') no-repeat -49px -142px;
+		width: 32px;
+		height: 32px;
+	}	
+}
+
+.sprite-pinterest {
+	background: url('/images/social_icon.png') no-repeat 0 -47px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+
+	&:hover {
+		background: url('/images/social_icon.png') no-repeat -49px -47px;
+		width: 32px;
+		height: 32px;
+	}	
 }

@@ -1,5 +1,5 @@
 .jury {
-    padding-bottom: 50px;
+    padding-bottom: $padding-lg;
 }
 
 .hovereffect {
@@ -10,42 +10,43 @@
 	position: relative;
 	text-align: center;
 	cursor: default;
-	margin-bottom: 30px;
-}
+	margin-bottom: $margin-md;
 
-.hovereffect .overlay {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	overflow: hidden;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	background-color: rgba(0,0,0,0.5);
-	-webkit-transition: all .4s ease-in-out;
-	transition: all .4s ease-in-out;
-}
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		background-color: $color-grey;
 
-.hovereffect img {
-	display: block;
-	position: relative;
-	-webkit-transition: all .4s linear;
-	transition: all .4s linear;
-}
+		@extend.transition;
+	}
 
-.hovereffect h2 {
-	text-transform: uppercase;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	position: relative;
-	font-size: 17px;
-	background: rgba(0,0,0,0.6);
-	-webkit-transform: translatey(-100px);
-	-ms-transform: translatey(-100px);
-	transform: translatey(-100px);
-	-webkit-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	padding: 10px;
+	img {
+		display: block;
+		position: relative;
+		width: 100%;
+
+		@extend.transition;
+	}
+
+	h2 {
+		background: $color-white-transp;
+		color: $primary-color;
+		font-size: $font-size-sm;
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;
+		-webkit-transform: translatey(300px);
+		-ms-transform: translatey(300px);
+		transform: translatey(300px);
+		padding: $padding-sm;
+
+		@extend.transition;
+	}
 }
 
 .hovereffect:hover img {
@@ -71,3 +72,16 @@
 	-webkit-transition-delay: .2s;
 	transition-delay: .2s;
 }
+
+.text__absolute {
+	position: absolute;
+	color: $primary-color;
+	font-size: $font-size-sm;
+	text-align: center;
+	text-transform: capitalize;
+	text-shadow: 2px 2px 2px $color-grey;
+	top: 90%;
+	left: 0;
+	right: 0;
+}
+

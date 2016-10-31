@@ -8,6 +8,9 @@
 
 // Import base
 @import './base/variables.scss';
+@import './base/extend.scss';
+@import './base/overwritten-bootstrap.scss';
+@import './base/overwritten-light-box.scss';
 @import './base/general.scss';
 @import './base/typography.scss';
 
@@ -26,6 +29,7 @@
 @import './layout/section_news.scss';
 @import './layout/section_partners.scss';
 @import './layout/section_submissions.scss';
+@import './layout/media-query.scss';
 
 
 //Import pages

@@ -1,0 +1,142 @@
+// navigation-menu
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .header__motto {
+	padding-top: $height-calculated;
+}
+
+.caret {
+	color: $primary-color;
+
+	&:hover {
+		color: $secondary-color;
+	}
+}
+
+.dropdown {
+	display: inline-block;
+}
+
+.dropdown-menu {
+	top: 94.1%;
+}
+
+.dropdown-menu>li>a {
+	color: $base-color;
+	font-size: $font-size-sm;
+	text-transform: capitalize;
+	text-align: $center;
+	padding: $padding-sm;
+
+	@extend.transition;
+
+	&:hover {
+		background-color: transparent;
+		color: $secondary-color;
+	}
+}
+
+.form-control-navbar {
+	background-color: $color-black;
+	color: $secondary-color;
+	border-radius: $padding-mdd;
+	border: $padding-xxs solid $primary-color;
+	padding: 5px 10px;
+
+
+	@extend.transition;
+
+	&:focus {
+	    border-color: $secondary-color;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px $secondary-color;
+	}
+
+	&.navicon_search {
+		text-align: center;
+		box-shadow: none;
+	}
+}
+
+.modal-dialog {
+	z-index: 1050;
+}
+
+// about section sidebar
+.glyphicon-play:before {
+	color: $primary-color;
+	font-size: $font-size-xl;
+	cursor: pointer;
+}
+
+// carousel
+.carousel-control {
+	&.left {
+		background-image: none;
+	}
+	&.right {
+		background-image: none;
+	}
+}
+
+.carousel-indicators li {
+	background-color: $color-grey;
+	border: 1px solid $color-grey;
+}
+
+.carousel-caption {
+	margin: 20px auto;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	width: 100%;
+	height: 700px;
+}
+
+.glyphicon-menu-left:before {
+	line-height: 700px;
+}
+
+.glyphicon-menu-right:before {
+	line-height: 700px;
+}
+
+// contact 
+.input_contact,
+.selectpicker {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	color: $color-grey;
+	font-size: $font-size-xs;
+	padding: $padding-sm;
+	border: 2px solid $color-grey-light;
+	border-radius: 3px;
+	 
+	@extend.transition;
+
+	&:focus {
+		box-shadow: 0 0 5px $secondary-color;
+		outline: $color-grey-light auto 2px;
+	}
+}
+
+
+.form-control {
+	color: $color-grey;
+	font-size: $font-size-xs;
+	padding: $padding-sm;
+	border: 2px solid $color-grey-light;
+	border-radius: 3px;
+
+	@extend.transition;
+
+	&:focus {
+		border-color: $color-grey-light;
+		box-shadow: 0 0 5px $secondary-color;
+	    outline: $color-grey-light auto 2px;
+	}
+}
