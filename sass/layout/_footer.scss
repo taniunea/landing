@@ -7,12 +7,22 @@ footer {
 	height: 70px;
 	background-color: $color-black;
 
-	@extend.flexbox-spacebetween-center-row-nowrap;
+	@extend.flexbox-spacebetween-center-row-wrap;
+}
+
+.rights {
+	padding: 15px;
+}
+
+.rights-text {
+	padding-right: 150px;
+	padding-left: 150px;
 }
 
 .social-icons {
 	width: 200px;
-	padding-right: 15px;
+	padding: 15px;
+
 	@extend.flexbox-spacebetween-center-row-nowrap;
 }
 

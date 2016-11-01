@@ -28,7 +28,7 @@ button:link {
 .divider_pink {
     display: inline-block;
     width: 30px;
-	border-top: $padding-xs solid $secondary-color;
+	border-bottom: $padding-xs solid $secondary-color;
     margin: $margin-sm auto 0 auto;
 }
 
@@ -63,7 +63,7 @@ button:link {
 
 .text-grey-md-bold {
 	color: $base-color;
-	font-size: $font-size-md;
+	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -91,6 +91,13 @@ button:link {
 	font-size: $font-size-default;
 	font-style: italic;
 	padding-top: $padding-xl;
+	text-shadow: 2px 2px 2px $color-grey;
+}
+
+.paragraph_white-xs {
+	color: $primary-color;
+	font-size: $font-size-default;
+	font-style: italic;
 	text-shadow: 2px 2px 2px $color-grey;
 }
 

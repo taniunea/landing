@@ -29,13 +29,8 @@
 	}
 }
 
-/* ----------- Galaxy S5 ----------- */
+@media (max-width: 768px) {
 
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
   	.header-title {
   		font-size: 35px;
   	}
@@ -44,9 +39,18 @@
   		width: 90%;
   	}
 
-  	.about,
-  	.jury {
-  		padding-bottom: 15px;
+
+  	.about {
+  		padding-bottom: 0;
+  	}
+
+  	.jury,
+  	.submissions,
+  	.news,
+  	.partners,
+  	.contacts {
+  		padding-top: 30px;
+  		padding-bottom: 0;
   	}
 
   	.motto {
@@ -55,22 +59,40 @@
 	}
 
   	.title {
-  		font-size: $font-size-md;
+  		font-size: 30px;
+  	}
+
+  	h2 {
+  		margin-top: 30px;
   	}
 
   	.divider_pink {
-  		width: 20px;
-  		border-top: 3px solid $secondary-color;
+  		width: 30px;
+  		border-bottom: 3px solid $secondary-color;
   	} 
   	
+  	.spacing {
+  		padding-bottom: 0;
+  	}
+
   	.paragraph {
   		font-size: $font-size-default;
   		margin-bottom: 0;
   	}
 
+  	.sidebar {
+  		padding-top: 15px;
+  		padding-bottom: 15px;
+  	}
+
   	.text-grey,
   	.text__absolute {
   		font-size: 16px;
+  		padding-bottom: 10px;
+  	}
+
+  	.text__absolute {
+  		top: 85%;
   	}
 
 	.about__video {
@@ -85,19 +107,24 @@
 	    padding: 15px 20px;
 	}
 
+	.paragraph_white-xs {
+		display: none;
+	}
+
 	.gallery-item {
 		width: 50%;
 	}
 
 	.text-grey-md-bold {
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	.read-more-state:checked ~ .read-more-wrap .read-more-target {
 		font-size: 14px;
 	}
 
-	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	.carousel-inner>.item>img, 
+	.carousel-inner>.item>a>img {
 		height: auto;
 	}
 
@@ -107,12 +134,18 @@
 	}
 
 	.carousel-caption {
+		background-color: $color-white-transp;
 		padding-bottom: 0;
-		margin: 10px auto;
+		padding-top: 80px;
+		margin: 0 auto;
 	}
 
 	.carousel-indicators {
-		bottom: -5px;
+		bottom: -10px;
+	}
+
+	.news-block {
+		padding-bottom: 30px;
 	}
 
 	.logos {
@@ -120,6 +153,87 @@
 			width: 60px;
 			height: 60px;
 			margin-bottom: 30px;
+		}
+	}
+
+	.parallax-window {
+		min-height: 200px;
+	}
+
+	.reviews {
+		height: auto;
+	}
+
+	.reviews-author {
+		margin-top: 10px;
+	}
+
+	blockquote {
+		&.paragraph {
+			margin: 10px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+
+	.contact-personal {
+		padding-bottom: 30px;
+	}
+
+	.form {
+		padding-bottom: 0;
+	}
+
+	.text-grey-sm {
+		font-size: 16px;
+	}
+
+	.input_contact, 
+	.selectpicker {
+		height: auto;
+	}
+
+	.button {
+		font-size: 22px;
+	}
+
+	.location-map {
+		height: 400px;
+	}
+
+	.footer {
+		height: 150px;
+	}
+
+	.flexbox-spacebetween-center-row-wrap {
+		justify-content: center;
+	}
+
+	.rights {
+		order: 3;
+	}
+
+	.rights-text {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.social-icons {
+		order: 2;
+	}
+
+	.image {
+		display: none;
+	}
+
+	.col-xs-6 {
+		&.mobile:nth-of-type(even) {
+			padding-left: 7.5px;
+		}
+
+		&.mobile:nth-of-type(odd) {
+			padding-right: 7.5px;
 		}
 	}
 }
