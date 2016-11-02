@@ -29,8 +29,10 @@
 	}
 }
 
+// media query for tablets
 
 @media (max-width: 991px) {
+
 	.spacing {
 		padding-bottom: 0;
 	}
@@ -80,10 +82,6 @@
 		50% {
 		    transform: scale(1.1);
 		}
-		  
-		// 80% {
-		//     transform: translateX(360deg);
-		// }
 	}
 
 	.parallax-window {
@@ -104,6 +102,7 @@
 	}
 }
 
+// media query for smarphone
 
 @media (max-width: 767px) {
 
@@ -115,18 +114,12 @@
   		width: 90%;
   	}
 
-
-  	.about {
-  		padding-bottom: 0;
-  	}
-
+  	.about,
   	.jury,
   	.submissions,
   	.news,
-  	.partners,
-  	.contacts {
-  		padding-top: 30px;
-  		padding-bottom: 0;
+  	.partners {
+  		padding-bottom: 30px;
   	}
 
   	.motto {
