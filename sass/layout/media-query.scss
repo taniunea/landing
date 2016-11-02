@@ -29,7 +29,83 @@
 	}
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 991px) {
+	.spacing {
+		padding-bottom: 0;
+	}
+
+	.gallery-item {
+		width: 33.33%;
+	}
+
+	.paragraph_white-xs {
+	    padding: 15px 20px;
+	}
+
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		height: auto;
+	}
+
+	blockquote {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 30px;
+
+		&.paragraph {
+			padding-bottom: 0;
+		}
+	}
+
+	.element {
+		animation: none;
+		padding-top: 15px;
+	}
+
+	.reviews {
+		height: auto;
+	}
+	
+
+	.reviews-author,
+	.reviews-author_rainer-mahlamaeki {
+		animation: movement 10s linear infinite alternate;
+	}
+
+	@keyframes movement {
+	 	0%, 100% {
+	   		transform: scale(0.8);
+ 		}
+  
+		50% {
+		    transform: scale(1.1);
+		}
+		  
+		// 80% {
+		//     transform: translateX(360deg);
+		// }
+	}
+
+	.parallax-window {
+		display: none;
+	}
+
+	.form {
+		padding-bottom: 0;
+	}
+
+	.rights-text {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.location-map {
+		height: 500px;
+	}
+}
+
+
+@media (max-width: 767px) {
 
   	.header-title {
   		font-size: 35px;
@@ -85,14 +161,14 @@
   		padding-bottom: 15px;
   	}
 
-  	.text-grey,
-  	.text__absolute {
-  		font-size: 16px;
+  	.text-grey {
   		padding-bottom: 10px;
   	}
 
   	.text__absolute {
   		top: 85%;
+  		font-size: 14px;
+  		padding-bottom: 10px;
   	}
 
 	.about__video {
@@ -237,3 +313,5 @@
 		}
 	}
 }
+
+

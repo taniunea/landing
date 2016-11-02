@@ -1,8 +1,16 @@
 lightbox.option({showImageNumberLabel: false})
 
-$(".js-silky-smooth").on("click", "a", function() {
+$(".js-silky-smooth").on("click", "a", function(event) {
+	event.preventDefault();
+
+	var elCoordinate = $($.attr(this, "href")).offset().top;
+	
+	if(elCoordinate > 700) {
+		elCoordinate = elCoordinate - 55;
+	}
+    
     return $("html, body").animate({
-        scrollTop: $($.attr(this, "href")).offset().top
+        scrollTop: elCoordinate
     }, 500)
 });
 
@@ -13,8 +21,3 @@ $('.map-container')
 			$(this).find('iframe').removeClass('clicked')});
 
 
-/*$('.parallax-window').parallax({
-    naturalWidth: 1400,
-    naturalHeight: 900,
-    imageSrc: '/images/reviews.jpg'
-});*/
