@@ -26,6 +26,7 @@ var menuitems = [
 		"parentid" : -1
 	},	{
 		"item" : "contact",
+		"url" : "#",
 		"id" : 6,
 		"parentid" : -1
 	},	{
