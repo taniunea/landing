@@ -743,17 +743,40 @@
 <script type="text/javascript">
     var menu = $("#navmenu");
     var menuitems_length = menuitems.length;
+
+    function createDropdown(menuItem){
+        let block = document.createElement('div');
+        block.className = "dropdown";
+        let button = document.createElement('button');
+        button.className = "navigation__menu-item";
+        button.innerText = menuItem.item;
+        block.append(button);
+        let aBlock = document.createElement('div');
+        aBlock.className = "dropdown-content";
+
+        for (var i = 0; i < menuItem.submenu.length; i++) {
+            let a = document.createElement('a');
+            a.href = menuItem.submenu[i].url;
+            a.innerText = menuItem.submenu[i].item;
+            aBlock.append(a);
+        }
+        block.append(aBlock);
+
+        return block;
+    }
+
     for (var i = 0; i < menuitems_length; i++) {
         var menuitem = menuitems[i];
-        if (menuitem.parentid != -1) {
-            continue;
+        if (menuitem.submenu) {
+            menu.append(createDropdown(menuitem));
+        } else {
+            let a = document.createElement('a');
+            a.href = menuitem.url;
+            a.innerText = menuitem.item;
+            a.className = "navigation__menu-item";
+            console.log(a);
+            menu.append(a);
         }
-        var a = document.createElement('a');
-        a.href = menuitem.url;
-        a.innerText = menuitem.item;
-        a.className = "navigation__menu-item";
-        console.log(a);
-        menu.append(a);
     }
 </script>
 <!--Import custom scripts -->

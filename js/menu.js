@@ -1,49 +1,33 @@
 var menuitems = [
 	{
 		"item" : "about",
-		"url" : "#about", 
-		"id" : 1,
-		"parentid" : -1
+		"url" : "#about" 
 	},	{
 		"item" : "jury",
-		"url" : "#jury", 
-		"id" : 2,
-		"parentid" : -1
+		"url" : "#jury" 
 	},	{
 		"item" : "submissions",
-		"url" : "#submissions", 
-		"id" : 3,
-		"parentid" : -1
+		"url" : "#submissions" 
 	},	{
 		"item" : "news",
-		"url" : "#news", 
-		"id" : 4,
-		"parentid" : -1
+		"url" : "#news" 
 	},	{
 		"item" : "partners",
-		"url" : "#partners", 
-		"id" : 5,
-		"parentid" : -1
+		"url" : "#partners" 
 	},	{
 		"item" : "contact",
 		"url" : "#",
-		"id" : 6,
-		"parentid" : -1
-	},	{
-		"item" : "office",
-		"url" : "#office", 
-		"id" : 7,
-		"parentid" : 6
-	},	{
-		"item" : "contact us",
-		"url" : "#contact-us", 
-		"id" : 8,
-		"parentid" : 6
-	},
-	{
-		"item" : "locate us",
-		"url" : "#map", 
-		"id" : 8,
-		"parentid" : 6
-	}
+		"submenu" : [
+			{
+				"item" : "Office",
+				"url" : "#office" 
+			},	{
+				"item" : "Contact us",
+				"url" : "#contact-us" 
+			},	{
+				"item" : "Locate us",
+				"url" : "#map" 
+			}
+		]
+	}	
 ];
