@@ -1,3 +1,6 @@
+
+// lightbox library
+
 lightbox.option({showImageNumberLabel: false})
 
 $(".js-silky-smooth").on("click", "a", function(event) {
