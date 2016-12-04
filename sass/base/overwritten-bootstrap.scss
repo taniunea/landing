@@ -1,5 +1,5 @@
 // navigation-menu
-.affix {
+.affix.navigation {
     top: 0;
     width: 100%;
 }
@@ -28,7 +28,7 @@
 	color: $base-color;
 	font-size: $font-size-sm;
 	text-transform: capitalize;
-	text-align: $center;
+	text-align: center;
 	padding: $padding-sm;
 
 	@extend.transition;
@@ -52,6 +52,7 @@
 	&:focus {
 	    border-color: $secondary-color;
 		box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px $secondary-color;
+		outline: none;
 	}
 
 	&.navicon_search {

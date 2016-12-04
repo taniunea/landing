@@ -77,3 +77,13 @@ footer {
 		height: 32px;
 	}	
 }
+
+.toTop {
+	width: 64px;
+	height: 64px;
+
+	&.affix {
+		right: 3%;
+		top: 82%;
+	}
+}

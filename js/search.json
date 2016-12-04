@@ -1,0 +1,8 @@
+[ 
+  {"name": "Timeline", "id": "#about"}, 
+  {"name": "Jury", "id": "#name"}, 
+  {"name": "Submissions", "id": "#submissions"}, 
+  {"name": "News", "id": "#news"}, 
+  {"name": "Partners", "id": "#partners"},
+  {"name": "Contact", "id": "#contacts"}
+ ]

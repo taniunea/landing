@@ -11,7 +11,7 @@
 	color: $base-color;
 	font-family: $main-font;
 	font-size: $font-size-xl;
-	text-align: $center;
+	text-align: center;
 	padding-bottom: $padding-md;
 	text-shadow: 2px 2px 2px $color-grey;
 }
@@ -19,5 +19,5 @@
 .header-title-lg {
 	color: $secondary-color;
 	font-size: larger;
-	font-style: $italic;
+	font-style: italic;
 }

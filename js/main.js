@@ -24,3 +24,21 @@ $('.map-container')
 			$(this).find('iframe').removeClass('clicked')});
 
 
+$(document).ready(function(){
+	$(".js-search").on("submit", function(event){
+		event.preventDefault();
+		console.log("test");
+		var searchWord = $(this).find("input").val();
+		console.log(menuitems);
+		console.log(searchWord);
+		for ( var i = 0; i < menuitems.length; i++) {
+			if (menuitems[i].item.toLowerCase() === searchWord.toLowerCase()){
+				var searchCoordinate = $(menuitems[i].url).offset().top;
+				console.log(searchCoordinate);
+				return $("html, body").animate({
+				    scrollTop: searchCoordinate
+				}, 500)
+			}
+		}
+	});
+});

@@ -9,6 +9,10 @@
 	padding: $padding-md;
 }
 
+.navigation__menu {
+	color: $primary-color;
+}
+
 .navigation__menu-item {
 	background-color: $color-black;
 	color: $primary-color;
@@ -21,9 +25,9 @@
 	@extend.transition;
 
 	&:hover,
-	&:link,
 	&:focus {
 		color: $secondary-color;
+		outline: none;
 	}
 }
 

@@ -11,20 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
-    <!-- JS file -->
-    <script src="node_modules/easy-autocomplete/dist/jquery.easy-autocomplete.min.js"></script> 
-    <script type="text/javascript">
-    var options = {
-        data: ["blue", "green", "pink", "red", "yellow"]
-    };
-
-    $("#basics").easyAutocomplete(options);
-    </script>
+    
     <!-- CSS file -->
     <link rel="stylesheet" href="node_modules/easy-autocomplete/dist/easy-autocomplete.min.css"> 
     <!-- Additional CSS Themes file - not required-->
-    <link rel="stylesheet" href="node_modules/easy-autocomplete/dist/easy-autocomplete.themes.min.css"> 
+    <!-- <link rel="stylesheet" href="node_modules/easy-autocomplete/dist/easy-autocomplete.themes.min.css"> --> 
 
 </head>
 <body>
@@ -44,7 +35,7 @@
             <div class="navigation navbar-inverse" data-spy="affix" data-offset-top="700">
                 <div class="navigation__logo">
                     <a href="#header">
-                        <img src="/images/logo.png" alt="brand-logo" class="navigation__logo-image" />
+                        <img src="images/logo.png" alt="brand-logo" class="navigation__logo-image" />
                     </a>
                 </div>
 
@@ -52,7 +43,7 @@
                 <div class="navigation__menu js-silky-smooth" id="navmenu"></div>
 
                 <div class="navigation__search">
-                    <form class="navbar-form navbar-left">
+                    <form class="navbar-form navbar-left js-search">
                         <div class="form-group">
                           <input id="basics" type="text" class="form-control-navbar" placeholder="Search" />
                         </div>
@@ -135,7 +126,7 @@
                                                         <button type="button" class="close"    data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                     </div>
                                                     <video width="100%" height="100%" controls>
-                                                        <source src="/images/pass-countdown.ogg" type="video/ogg" />
+                                                        <source src="images/pass-countdown.ogg" type="video/ogg" />
                                                         Your browser does not support the video tag.
                                                     </video>
                                                 </div>
@@ -206,7 +197,7 @@
             <div class="row">
                 <div class="col-md-4 col-xs-6 mobile">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/ritva-viljanen.jpg" alt="Ritva Viljanen" />
+                        <img class="img-responsive" src="images/ritva-viljanen.jpg" alt="Ritva Viljanen" />
                         <div class="overlay">
                             <p class="paragraph_white">Jury Chair, Deputy Mayor, City of Helsinki</p>
                             <p class="paragraph_white-xs">
@@ -220,7 +211,7 @@
                 </div>
                 <div class="col-md-4 col-xs-6 mobile">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/mark-wigley.jpg" alt="Mark Wigley" />
+                        <img class="img-responsive" src="images/mark-wigley.jpg" alt="Mark Wigley" />
                         <div class="overlay">
                             <p class="paragraph_white">Dean Emeritus of the Graduate School of Architecture</p>
                             <p class="paragraph_white-xs">
@@ -234,7 +225,7 @@
                 </div>
                 <div class="col-md-4 col-xs-6 mobile">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/juan-herreros.jpg" alt="Juan Herreros">
+                        <img class="img-responsive" src="images/juan-herreros.jpg" alt="Juan Herreros">
                         <div class="overlay">
                             <p class="paragraph_white">Professor, and Founder, Estudio Herreros</p>
                             <p class="paragraph_white-xs">
@@ -248,7 +239,7 @@
                 </div>  
                 <div class="col-md-4 col-xs-6 mobile">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/mikko-aho.jpg" alt="Mikko Aho">
+                        <img class="img-responsive" src="images/mikko-aho.jpg" alt="Mikko Aho">
                         <div class="overlay">
                             <p class="paragraph_white">Director, City Planning and Architect, Helsinki Planning Department</p>
                             <p class="paragraph_white-xs">
@@ -262,7 +253,7 @@
                 </div> 
                 <div class="col-md-4 col-xs-6 mobile">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/rainer-mahlamaeki.jpg" alt="Rainer Mahlamaeki">
+                        <img class="img-responsive" src="images/rainer-mahlamaeki.jpg" alt="Rainer Mahlamaeki">
                         <div class="overlay">
                             <p class="paragraph_white">Professor, and Founder, Lahdelma & Mahlamäki Architects</p>
                             <p class="paragraph_white-xs">
@@ -276,7 +267,7 @@
                 </div>
                 <div class="col-md-4 col-xs-6 mobile">
                     <div class="hovereffect">
-                        <img class="img-responsive" src="/images/helena-sateri.jpg" alt="Helena Sateri">
+                        <img class="img-responsive" src="images/helena-sateri.jpg" alt="Helena Sateri">
                         <div class="overlay">
                             <p class="paragraph_white">Director General, the Ministry of the Environment, Finland</p>
                             <p class="paragraph_white-xs">
@@ -309,109 +300,109 @@
             <div class="gallery">
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_1.jpg" data-title="ML-1" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_1.jpg" alt="Project_1" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_1.jpg" alt="Project_1" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-1</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_2.jpg" data-title="ML-2" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_2.jpg" alt="Project_2" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_2.jpg" alt="Project_2" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-2</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_3.jpg" data-title="ML-3" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_3.jpg" alt="Project_3" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_3.jpg" alt="Project_3" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-3</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_4.jpg" data-title="ML-4" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_4.jpg" alt="Project_4" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_4.jpg" alt="Project_4" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-4</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_5.jpg" data-title="ML-5" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_5.jpg" alt="Project_5" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_5.jpg" alt="Project_5" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-5</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_6.jpg" data-title="ML-6" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_6.jpg" alt="Project_6" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_6.jpg" alt="Project_6" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-6</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_7.jpg" data-title="ML-7" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_7.jpg" alt="Project_7" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_7.jpg" alt="Project_7" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-7</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_8.jpg" data-title="ML-8" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_8.jpg" alt="Project_8" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_8.jpg" alt="Project_8" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-8</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_9.jpg" data-title="ML-9" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_9.jpg" alt="Project_9" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_9.jpg" alt="Project_9" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-9</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_10.jpg" data-title="ML-10" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_10.jpg" alt="Project_10" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_10.jpg" alt="Project_10" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-10</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_11.jpg" data-title="ML-11" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_11.jpg" alt="Project_11" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_11.jpg" alt="Project_11" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-11</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_12.jpg" data-title="ML-12" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_12.jpg" alt="Project_12" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_12.jpg" alt="Project_12" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-12</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_13.jpg" data-title="ML-13" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_13.jpg" alt="Project_13" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_13.jpg" alt="Project_13" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-13</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_14.jpg" data-title="ML-14" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_14.jpg" alt="Project_14" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_14.jpg" alt="Project_14" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-14</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_15.jpg" data-title="ML-15" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_15.jpg" alt="Project_15" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_15.jpg" alt="Project_15" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-15</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_16.jpg" data-title="ML-16" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_16.jpg" alt="Project_16" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_16.jpg" alt="Project_16" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-16</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_17.jpg" data-title="ML-17" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_17.jpg" alt="Project_17" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_17.jpg" alt="Project_17" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-17</div>
                 </div>
                 <div class="gallery-item">
                     <a href="/images/projects-entries/project_18.jpg" data-title="ML-18" data-lightbox="projects-gallery" class="darken">
-                        <img src="/images/projects-entries/project_18.jpg" alt="Project_18" class="gallery-item__image" />
+                        <img src="images/projects-entries/project_18.jpg" alt="Project_18" class="gallery-item__image" />
                     </a>
                     <div class="image-caption">ML-18</div>
                 </div>
@@ -501,21 +492,21 @@
               <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="/images/slider_3.jpg" alt="Image" />
+                    <img src="images/slider_3.jpg" alt="Image" />
                     <div class="carousel-caption">
                         <div class="text-grey-md-bold">77 countries</div>
                         <div class="text-grey">may apply</div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/slider_2.jpg" alt="Image" />
+                    <img src="images/slider_2.jpg" alt="Image" />
                     <div class="carousel-caption">
                         <div class="text-grey-md-bold">50 projects</div>
                         <div class="text-grey">per day</div>
                     </div>
                 </div>
                 <div class="item">
-                    <img src="/images/a.png" alt="Image" />
+                    <img src="images/a.png" alt="Image" />
                     <div class="carousel-caption">
                         <div class="text-grey-md-bold">1700 submissions</div>
                         <div class="text-grey">till today</div>
@@ -720,7 +711,11 @@
         </div>
     </section>
 
-
+    <div class="toTop" data-spy="affix" data-offset-top="700">
+        <a href="#header">
+            <img src="images/arrow-up-.png" />
+        </a>
+    </div>
 
     <!--Footer section-->
     <footer>
@@ -729,7 +724,7 @@
                 <div class="footer">
                     <div>
                         <a href="#header">
-                            <img src="/images/logo.png" alt="brand-logo" class="navigation__logo-image image" />
+                            <img src="images/logo.png" alt="brand-logo" class="navigation__logo-image image" />
                         </a>
                     </div>
                     <div class="rights">
@@ -749,6 +744,7 @@
 </div>
 
 <!--Import library -->
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
 <script src="js/vendor/bootstrap.min.js" type="text/javascript"></script>
 <script src="node_modules/lightbox2/dist/js/lightbox.js"></script>
@@ -792,7 +788,21 @@
         }
     }
 </script>
+<!-- JS file -->
+<script src="node_modules/easy-autocomplete/dist/jquery.easy-autocomplete.min.js"></script> 
+<script type="text/javascript">
+   var options = {
+        url: "js/search.json",
+        getValue: "name",
+        list: {   
+            match: {
+                enabled: true
+            }
+        }
+    };
 
+    $("#basics").easyAutocomplete(options);
+    </script>
 
 <!--Import custom scripts -->
 <script src="js/main.js" type="text/javascript"></script>

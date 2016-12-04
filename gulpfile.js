@@ -45,6 +45,7 @@ var reload       = browserSync.reload;
  gulp.task( 'browser-sync', function() {
  	browserSync.init({
     open: true,
+    port: 2300,
     server: {
       baseDir: "./"
     }
@@ -90,3 +91,4 @@ gulp.task('styles', function () {
  gulp.task( 'default', ['styles', 'browser-sync'], function () {
  	gulp.watch( styleWatchFiles, [ 'styles' ] );
  });
+  

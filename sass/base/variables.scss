@@ -2,9 +2,6 @@
 $main-font:                 ('Roboto', sans-serif);
 $secondary-font:            ('Open Sans', sans-serif);
 
-// font-styles
-$italic:					italic;
-
 // size
 $font-size-default: 	    1em;						//14px
 $font-size-xs: 	            1.1428571429em;				//16px
@@ -40,6 +37,3 @@ $full-width:				100%;						//100%
 
 // height
 $height-calculated:			calc(100vh - 100px);
-
-// aligning
-$center:					center;
